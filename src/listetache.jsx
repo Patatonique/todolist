@@ -19,7 +19,7 @@ function ListeTache({ listeTaches, setListeTaches }) {
   return (
     <>
       {listeTaches.map((tache, index) => (
-        <li key={index}>
+        <li className='uneTache' key={index}>
           <p className={checkedItems[index] ? 'barre' : ''}>
             <input
               type="checkbox"

@@ -17,7 +17,7 @@
 }
 
 body{
-  background-color: rgb(2, 2, 43);
+  background-color: var(--jauneclair);
 }
 
 .titre{

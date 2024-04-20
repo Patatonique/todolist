@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import ListeTache from './listetache'
+import { BiSolidTrashAlt, BiSolidPencil } from "react-icons/bi";
+
 
 import './App.css'
 
@@ -17,6 +19,10 @@ function App() {
     setTache(''); // Réinitialisation de la valeur de tache après l'ajout
   }
 
+  function deleteAll(){
+    setListeTaches([])
+  }
+
   return (
     <div className="container">
       <h1 className='titre'>My Todo List</h1>
@@ -30,6 +36,7 @@ function App() {
       <button className='btn' onClick={handleSendTache}>Ajouter</button>
       {listeTaches.length > 0 && (
         <ul className='listeTache'>
+          <BiSolidTrashAlt className='deleteAll' size={20} onClick={deleteAll}/>
           <ListeTache listeTaches={listeTaches} setListeTaches={setListeTaches}/>
         </ul>
       )}

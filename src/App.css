@@ -9,9 +9,9 @@
 }
 
 :root{
-  --vertclair : #CDFADB;
-  --jauneclair : #F6FDC3;
-  --orangeclair : #FFCF96;
+  --vertclair : #25414d;
+  --jauneclair : #9b8159;
+  --orangeclair : #B67352;
   --rouge : #FF8080;
   --blanc : #fdfdfd;
 }
@@ -25,9 +25,7 @@ body{
 }
 input[type="text"]{
   color: var(--rouge);
-  font-size: 1.2 rem;
   width: 50%;
-  height: 5%;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 10px 50px 50px 10px;
@@ -75,7 +73,7 @@ h1{
   display: flex;
   justify-content: center;
   padding: 10px;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   margin-bottom: 20px;
 }
 
@@ -102,15 +100,36 @@ ul{
 }
 
 svg path{
-  width: 100%;
-  height: 120%;
-  fill: red;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
 }
 
 .uneTache{
-  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
   background-color: var(--blanc);
   width: 80%;
   padding: 1rem;
+}
+
+.icon{
+  margin: 0px 5px;
+}
+
+.stylo{
+  fill: green;
+}
+
+.tache{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.deleteAll{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  size: 50px;
 }

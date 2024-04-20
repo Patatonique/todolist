@@ -41,6 +41,7 @@ function ListeTache({ listeTaches, setListeTaches }) {
               {editIndex === index ? (
                 <input
                   type="text"
+                  className='changeTache'
                   value={editedValue}
                   onChange={handleEditChange}
                   onBlur={() => saveEditedTache(index)}

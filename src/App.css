@@ -25,11 +25,23 @@ body{
 }
 input[type="text"]{
   color: var(--rouge);
+  border: 1px solid black;
   width: 50%;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 10px 50px 50px 10px;
 }
+
+input[type="text"].changeTache{
+  color: green;
+  width: 50%;
+  border: 0px solid black;
+  margin-left: 0%;
+  margin-right: 0%;
+  border: 0px;
+  border-radius: 0 0 0 0;
+}
+
 
 input[type="checkbox"]{
   margin-right: 10px;
